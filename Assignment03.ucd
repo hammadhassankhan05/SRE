@@ -20,33 +20,133 @@
     <UserID>UC-1</UserID>
     <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
     <Name>UC-01-Select Language</Name>
-    <Description>This is a test use case</Description>
+    <Description>Select Language allows the Caller/Callee to select Language of the Application.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-\viewkind4\uc1\pard\f0\fs20 This is a test use case\par
+\viewkind4\uc1\pard\f0\fs20 Select Language allows the Caller/Callee to select Language of the Application.\par
 }
 </RichDescription>
     <Sequence>0</Sequence>
     <Priority>1</Priority>
-    <PreConditions />
-    <PostConditions />
+    <PreConditions>Application must be installed.</PreConditions>
+    <PostConditions>The system will not allow a Caller/Callee to proceeds that application without selecting any language.</PostConditions>
     <Level />
-    <Complexity />
-    <UCStatus />
-    <ImplStatus />
+    <Complexity>Low</Complexity>
+    <UCStatus>Initial</UCStatus>
+    <ImplStatus>Started</ImplStatus>
     <AssignedTo />
     <Release />
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T16:37:08.1836789+05:00</DateAdded>
-    <DateModified>2018-11-12T16:46:31.902492+05:00</DateModified>
+    <DateModified>2018-11-12T21:15:38.0228588+05:00</DateModified>
   </UseCase>
+  <Actor>
+    <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
+    <UserID>A-1</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>Caller/Callee</Name>
+    <Sequence>0</Sequence>
+    <Complexity />
+    <DateAdded>2018-11-12T20:48:10.6649384+05:00</DateAdded>
+    <DateModified>2018-11-12T20:48:47.5557564+05:00</DateModified>
+  </Actor>
+  <UCActor>
+    <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
+    <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
+    <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
+    <Kind>1</Kind>
+  </UCActor>
+  <Scenario>
+    <UniqueID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</UniqueID>
+    <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
+    <Description />
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20\par
+}
+</RichDescription>
+  </Scenario>
+  <Step>
+    <UniqueID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</UniqueID>
+    <ParentID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</ParentID>
+    <Description>The use case starts when the Caller/Callee starts the Application.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The use case starts when the \cf1\ul Caller/Callee\cf0\ulnone  starts the Application.\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b2756841-ddd7-4c90-854b-be446e65f877</UniqueID>
+    <ParentID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</ParentID>
+    <Description>The Caller/Callee selects the language that he/she would like to proceed in Application.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  selects the language that he/she would like to proceed in Application.\fs20\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2b36c42a-6c7b-4297-bbf3-4a53268a4a05</UniqueID>
+    <ParentID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</ParentID>
+    <Description>The Caller/Callee tap the next button (&gt; arrow head).</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  tap the next button (&gt; arrow head).\fs20\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-320a1a1a-d7c0-4f13-8361-c46ba6ee7ecd</UniqueID>
+    <ParentID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</ParentID>
+    <Description>A system responds by changing whole Application Language.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 A system responds by changing whole Application Language.\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Extension>
+    <UniqueID>X-67052cbe-d2e5-4f81-aa6f-3e330385595a</UniqueID>
+    <ParentID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</ParentID>
+    <Description>If the Caller/Callee does not start Application, the Selection screen does not appear.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 If the \cf1\ul Caller/Callee\cf0\ulnone  does not start Application, the Selection screen does not appear.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-fc7fbee4-6cfe-4f22-9c12-a4e2fc2efc5f</UniqueID>
+    <ParentID>ST-b2756841-ddd7-4c90-854b-be446e65f877</ParentID>
+    <Description>If the Caller/Callee does not select any Language, the system responds by asking the Caller/Callee to select any Language.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 If the \cf1\ul Caller/Callee\cf0\ulnone  does not select any Language, the system responds by asking the \cf1\ul Caller/Callee\cf0\ulnone  to select any Language.\cf2\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>2</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
-    <NextValue>1</NextValue>
+    <NextValue>2</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
