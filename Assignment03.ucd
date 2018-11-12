@@ -20,10 +20,25 @@
     <UserID>UC-1</UserID>
     <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
     <Name>UC-01-Select Language</Name>
+    <Description>This is a test use case</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 This is a test use case\par
+}
+</RichDescription>
     <Sequence>0</Sequence>
     <Priority>1</Priority>
+    <PreConditions />
+    <PostConditions />
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
     <DateAdded>2018-11-12T16:37:08.1836789+05:00</DateAdded>
-    <DateModified>2018-11-12T16:37:23.5588634+05:00</DateModified>
+    <DateModified>2018-11-12T16:46:31.902492+05:00</DateModified>
   </UseCase>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
