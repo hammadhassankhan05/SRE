@@ -17,8 +17,8 @@
   </Package>
   <UseCase>
     <UniqueID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</UniqueID>
-    <UserID>UC-2.1</UserID>
-    <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
+    <UserID>UC-3</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
     <Name>UC-01-Select Language</Name>
     <Description>Select Language allows the Caller/Callee to select Language of the Application.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
@@ -38,11 +38,11 @@
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T16:37:08.1836789+05:00</DateAdded>
-    <DateModified>2018-11-12T21:26:46.1021052+05:00</DateModified>
+    <DateModified>2018-11-12T21:52:17.5680259+05:00</DateModified>
   </UseCase>
   <UseCase>
     <UniqueID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</UniqueID>
-    <UserID>UC-2</UserID>
+    <UserID>UC-5</UserID>
     <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
     <Name>UC-08- View Blocked List</Name>
     <Description>View blocked list allows the Caller/Callee to view blocked numbers by Caller/Callee or Application</Description>
@@ -51,20 +51,46 @@
 \viewkind4\uc1\pard\f0\fs20 View blocked list allows the \cf1\ul Caller/Callee\cf0\ulnone  to view blocked numbers by \cf1\ul Caller/Callee\cf0\ulnone  or Application\fs20\par
 }
 </RichDescription>
-    <Sequence>0</Sequence>
+    <Sequence>2</Sequence>
     <Priority>1</Priority>
-    <PreConditions>Number was previously blocked to the Application to view in Blocked List.</PreConditions>
+    <PreConditions>Number was previously blocked to the Application.</PreConditions>
     <PostConditions>1. The system will not display a number that is blocked. </PostConditions>
     <Level />
     <Complexity>Low</Complexity>
-    <UCStatus>Initial</UCStatus>
+    <UCStatus>Name Only</UCStatus>
     <ImplStatus>Scheduled</ImplStatus>
     <AssignedTo />
     <Release />
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T21:25:40.0363487+05:00</DateAdded>
-    <DateModified>2018-11-12T21:34:46.604214+05:00</DateModified>
+    <DateModified>2018-11-12T21:55:37.8068332+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-e44ee1e6-ace9-4255-ac4e-05d5b113b07d</UniqueID>
+    <UserID>UC-4</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>UC-02-Sign Up</Name>
+    <Description>Sign Up allows the Caller/Callee to temporary Sign up in the application with the help of Facebook Account Kit.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 Sign Up allows the \cf1\ul Caller/Callee\cf0\ulnone  to temporary Sign up in the application with the help of Facebook Account Kit.\fs20\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Caller/Callee wasn’t previously logged in to the Application needs active number.</PreConditions>
+    <PostConditions>The system will not allow a Caller/Callee to Sign up without any active number.  </PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2018-11-12T21:54:11.7234114+05:00</DateAdded>
+    <DateModified>2018-11-12T21:58:55.4554677+05:00</DateModified>
   </UseCase>
   <Actor>
     <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
@@ -103,6 +129,10 @@
   <Scenario>
     <UniqueID>MSS-94abec20-7989-41e6-906a-5a38182e7868</UniqueID>
     <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-ba5af905-21f9-491e-af40-42266db81b77</UniqueID>
+    <ParentID>UC-e44ee1e6-ace9-4255-ac4e-05d5b113b07d</ParentID>
   </Scenario>
   <Step>
     <UniqueID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</UniqueID>
@@ -174,6 +204,66 @@
     <Sequence>1</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Step>
+  <Step>
+    <UniqueID>ST-3786b34d-6d8d-47af-82f2-547b59a5a67b</UniqueID>
+    <ParentID>MSS-ba5af905-21f9-491e-af40-42266db81b77</ParentID>
+    <Description>The use case starts when the Caller/Callee agreed to Facebook Account Kit Agreement.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 The use case starts when the \cf2\ul Caller/Callee\cf1\ulnone  agreed to Facebook Account Kit Agreement.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-79dc164b-9852-4fc8-b16a-ff736b92b61f</UniqueID>
+    <ParentID>MSS-ba5af905-21f9-491e-af40-42266db81b77</ParentID>
+    <Description>The Caller/Callee enter active phone mobile number.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 The \cf2\ul Caller/Callee\cf1\ulnone  enter active phone mobile number.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-a5110186-5c24-49c6-9af4-b58be83554c0</UniqueID>
+    <ParentID>MSS-ba5af905-21f9-491e-af40-42266db81b77</ParentID>
+    <Description>The system Verify the number by sending a secret code to Caller/Callee active number</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 The system Verify the number by sending a secret code to \cf2\ul Caller/Callee\cf1\ulnone  active number\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-31364f09-f9db-4825-b71a-b836868e2c79</UniqueID>
+    <ParentID>MSS-ba5af905-21f9-491e-af40-42266db81b77</ParentID>
+    <Description>The Caller/Callee confirms number by entering correct code.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 The \cf2\ul Caller/Callee\cf1\ulnone  confirms number by entering correct code.\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-d064555d-d058-4347-b512-414b89b58643</UniqueID>
+    <ParentID>MSS-ba5af905-21f9-491e-af40-42266db81b77</ParentID>
+    <Description>System Verify that code.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 System Verify that code.\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
   <Extension>
     <UniqueID>X-67052cbe-d2e5-4f81-aa6f-3e330385595a</UniqueID>
     <ParentID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</ParentID>
@@ -210,9 +300,57 @@
     <Sequence>0</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Extension>
+  <Extension>
+    <UniqueID>X-71937db8-9ad7-4b3a-bd9f-fdb245fc55ad</UniqueID>
+    <ParentID>ST-3786b34d-6d8d-47af-82f2-547b59a5a67b</ParentID>
+    <Description>If the Caller/Callee does not agree, he /she does not able to Sign up.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 If the \cf2\ul Caller/Callee\cf1\ulnone  does not agree, he /she does not able to Sign up.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-5725981e-f5bf-47f9-8577-8c406df55a59</UniqueID>
+    <ParentID>ST-79dc164b-9852-4fc8-b16a-ff736b92b61f</ParentID>
+    <Description>If the Caller/Callee does not enter correct no, he /she does not able to Sign up.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 If the \cf2\ul Caller/Callee\cf1\ulnone  does not enter correct no, he /she does not able to Sign up.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-fd65c83a-0f13-4c61-9892-d8a8370fbe02</UniqueID>
+    <ParentID>ST-79dc164b-9852-4fc8-b16a-ff736b92b61f</ParentID>
+    <Description>System responds by a dialog box showing message “Invalid Number”.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 System responds by a dialog box showing message \ldblquote Invalid Number\rdblquote .\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-0d4e4519-b5ae-4450-84c3-43584152890d</UniqueID>
+    <ParentID>ST-31364f09-f9db-4825-b71a-b836868e2c79</ParentID>
+    <Description>4a. If Caller/Callee enter wrong code , System resend code to that number.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 4a. If \cf2\ul Caller/Callee\cf1\ulnone  enter wrong code , System resend code to that number.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>3</NextValue>
+    <NextValue>6</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
