@@ -17,8 +17,8 @@
   </Package>
   <UseCase>
     <UniqueID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</UniqueID>
-    <UserID>UC-1</UserID>
-    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <UserID>UC-2.1</UserID>
+    <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
     <Name>UC-01-Select Language</Name>
     <Description>Select Language allows the Caller/Callee to select Language of the Application.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
@@ -38,7 +38,33 @@
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T16:37:08.1836789+05:00</DateAdded>
-    <DateModified>2018-11-12T21:15:38.0228588+05:00</DateModified>
+    <DateModified>2018-11-12T21:26:46.1021052+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</UniqueID>
+    <UserID>UC-2</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>UC-08- View Blocked List</Name>
+    <Description>View blocked list allows the Caller/Callee to view blocked numbers by Caller/Callee or Application</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 View blocked list allows the \cf1\ul Caller/Callee\cf0\ulnone  to view blocked numbers by \cf1\ul Caller/Callee\cf0\ulnone  or Application\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Number was previously blocked to the Application to view in Blocked List.</PreConditions>
+    <PostConditions>1. The system will not display a number that is blocked. </PostConditions>
+    <Level />
+    <Complexity>Low</Complexity>
+    <UCStatus>Initial</UCStatus>
+    <ImplStatus>Scheduled</ImplStatus>
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2018-11-12T21:25:40.0363487+05:00</DateAdded>
+    <DateModified>2018-11-12T21:34:46.604214+05:00</DateModified>
   </UseCase>
   <Actor>
     <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
@@ -60,6 +86,11 @@
     <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
     <Kind>1</Kind>
   </UCActor>
+  <UCActor>
+    <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
+    <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
   <Scenario>
     <UniqueID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</UniqueID>
     <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
@@ -68,6 +99,10 @@
 \viewkind4\uc1\pard\f0\fs20\par
 }
 </RichDescription>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-94abec20-7989-41e6-906a-5a38182e7868</UniqueID>
+    <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
   </Scenario>
   <Step>
     <UniqueID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</UniqueID>
@@ -116,6 +151,29 @@
     <Sequence>3</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Step>
+  <Step>
+    <UniqueID>ST-c04ea998-296e-4f9f-8533-b2b89efd2275</UniqueID>
+    <ParentID>MSS-94abec20-7989-41e6-906a-5a38182e7868</ParentID>
+    <Description>The use case starts when the Caller/Callee wants to view an entire set of blocked numbers such as a spam, blacklist.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The use case starts when the \cf1\ul Caller/Callee\cf0\ulnone  wants to view an entire set of blocked numbers such as a spam, blacklist.\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-8a960523-164a-4d2f-8a2f-530afc135def</UniqueID>
+    <ParentID>MSS-94abec20-7989-41e6-906a-5a38182e7868</ParentID>
+    <Description>The system responds by displaying blocked numbers.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 The system responds by displaying blocked numbers.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
   <Extension>
     <UniqueID>X-67052cbe-d2e5-4f81-aa6f-3e330385595a</UniqueID>
     <ParentID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</ParentID>
@@ -140,9 +198,21 @@
     <Sequence>0</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Extension>
+  <Extension>
+    <UniqueID>X-da2c0aec-7a82-4d4a-9d80-d426e1a2a781</UniqueID>
+    <ParentID>ST-c04ea998-296e-4f9f-8533-b2b89efd2275</ParentID>
+    <Description>If the Caller/Callee does not blacklist any number and no spam number called him/her Caller/Callee would not able to view blocked numbers</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 If the \cf1\ul Caller/Callee\cf0\ulnone  does not blacklist any number and no spam number called him/her \cf1\ul Caller/Callee\cf0\ulnone  would not able to view blocked numbers\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>2</NextValue>
+    <NextValue>3</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
