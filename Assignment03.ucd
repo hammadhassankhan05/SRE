@@ -81,16 +81,43 @@
     <Priority>1</Priority>
     <PreConditions>Caller/Callee wasn’t previously logged in to the Application needs active number.</PreConditions>
     <PostConditions>The system will not allow a Caller/Callee to Sign up without any active number.  </PostConditions>
-    <Level />
-    <Complexity />
-    <UCStatus />
-    <ImplStatus />
+    <Level>User</Level>
+    <Complexity>Medium</Complexity>
+    <UCStatus>Base</UCStatus>
+    <ImplStatus>Started</ImplStatus>
     <AssignedTo />
     <Release />
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T21:54:11.7234114+05:00</DateAdded>
-    <DateModified>2018-11-12T21:58:55.4554677+05:00</DateModified>
+    <DateModified>2018-11-12T22:01:02.1322232+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-95d59795-87e7-4a8b-877d-05e6c68f9fc9</UniqueID>
+    <UserID>UC-6</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>UC-03 Update Caller/Callee</Name>
+    <Description>Update Caller/Callee Information allows the Caller/Callee to permanently update information from the system. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 Update \cf1\ul Caller/Callee\cf0\ulnone  Information allows the \cf1\ul Caller/Callee\cf0\ulnone  to permanently update information from the system. \fs20\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>None</PreConditions>
+    <PostConditions>1. The system will not allow a Caller/Callee to update information that is being used in the system.  
+2. The system will not allow a Caller/Callee to update another Caller/Callee that has subordinates. </PostConditions>
+    <Level />
+    <Complexity>Medium</Complexity>
+    <UCStatus>Initial</UCStatus>
+    <ImplStatus>Started</ImplStatus>
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2018-11-12T22:39:37.4430092+05:00</DateAdded>
+    <DateModified>2018-11-12T22:46:38.5168506+05:00</DateModified>
   </UseCase>
   <Actor>
     <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
@@ -117,6 +144,11 @@
     <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
     <Kind>0</Kind>
   </UCActor>
+  <UCActor>
+    <ParentID>UC-e44ee1e6-ace9-4255-ac4e-05d5b113b07d</ParentID>
+    <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
   <Scenario>
     <UniqueID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</UniqueID>
     <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
@@ -133,6 +165,10 @@
   <Scenario>
     <UniqueID>MSS-ba5af905-21f9-491e-af40-42266db81b77</UniqueID>
     <ParentID>UC-e44ee1e6-ace9-4255-ac4e-05d5b113b07d</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</UniqueID>
+    <ParentID>UC-95d59795-87e7-4a8b-877d-05e6c68f9fc9</ParentID>
   </Scenario>
   <Step>
     <UniqueID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</UniqueID>
@@ -264,6 +300,66 @@
     <Sequence>4</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Step>
+  <Step>
+    <UniqueID>ST-d062aca4-c565-46f4-bee6-74d4201fe64a</UniqueID>
+    <ParentID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</ParentID>
+    <Description>The use case starts when the Caller/Callee wants to update an entire set of information such as a Caller/Callee Information.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The use case starts when the \cf1\ul Caller/Callee\cf0\ulnone  wants to update an entire set of information such as a \cf1\ul Caller/Callee\cf0\ulnone  Information.\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-253bb32c-2236-4929-8d35-29c94e6587c0</UniqueID>
+    <ParentID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</ParentID>
+    <Description>The Caller/Callee selects the set of information that he/she would like to update and directs the system to update the information.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  selects the set of information that he/she would like to update and directs the system to update the information.\fs20\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-746613bf-eb27-4719-a4b6-670b21af9c66</UniqueID>
+    <ParentID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</ParentID>
+    <Description>The system responds by asking the Caller/Callee to confirm updating the information.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The system responds by asking the \cf1\ul Caller/Callee\cf0\ulnone  to confirm updating the information.\fs20\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-f6032f19-7df5-4244-a86d-ca64385c0b23</UniqueID>
+    <ParentID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</ParentID>
+    <Description>The Caller/Callee confirms update.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  confirms update.\fs20\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-231f0358-1f14-4124-ad97-cc635647b367</UniqueID>
+    <ParentID>MSS-84b60fa3-f370-482e-ba59-5817a94186c1</ParentID>
+    <Description> A system responds by updating the information and notifying the Caller/Callee that the information was updated from the system.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20  A system responds by updating the information and notifying the \cf1\ul Caller/Callee\cf0\ulnone  that the information was updated from the system.\fs20\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
   <Extension>
     <UniqueID>X-67052cbe-d2e5-4f81-aa6f-3e330385595a</UniqueID>
     <ParentID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</ParentID>
@@ -348,9 +444,21 @@
     <Sequence>0</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Extension>
+  <Extension>
+    <UniqueID>X-2744ebc9-87eb-4ce0-94ce-8dfaf6565e2c</UniqueID>
+    <ParentID>ST-d062aca4-c565-46f4-bee6-74d4201fe64a</ParentID>
+    <Description>If the Caller/Callee does not confirm update, the information does not update.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 If the \cf1\ul Caller/Callee\cf0\ulnone  does not confirm update, the information does not update.\fs20\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>6</NextValue>
+    <NextValue>7</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
