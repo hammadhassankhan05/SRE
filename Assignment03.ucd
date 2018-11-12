@@ -66,6 +66,32 @@
     <DateAdded>2018-11-12T21:25:40.0363487+05:00</DateAdded>
     <DateModified>2018-11-12T21:34:46.604214+05:00</DateModified>
   </UseCase>
+  <UseCase>
+    <UniqueID>UC-ce807fd7-1ef4-4970-be9d-7d441edd5969</UniqueID>
+    <UserID>UC-3</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>UC-05-Dial Number</Name>
+    <Description>It allows the Caller/Callee to dial any number and make a call.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 It allows the \cf1\ul Caller/Callee\cf0\ulnone  to dial any number and make a call.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>The Caller/Callee must be connected to a cellular network.</PreConditions>
+    <PostConditions>The caller is connected to callee and now they can communicate.</PostConditions>
+    <Level />
+    <Complexity>Low</Complexity>
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2018-11-12T22:04:47.7974847+05:00</DateAdded>
+    <DateModified>2018-11-12T22:13:19.7437956+05:00</DateModified>
+  </UseCase>
   <Actor>
     <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
     <UserID>A-1</UserID>
@@ -91,6 +117,11 @@
     <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
     <Kind>0</Kind>
   </UCActor>
+  <UCActor>
+    <ParentID>UC-ce807fd7-1ef4-4970-be9d-7d441edd5969</ParentID>
+    <ActorID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
   <Scenario>
     <UniqueID>MSS-3997c979-7907-4b8b-bb24-9b64fcd66471</UniqueID>
     <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
@@ -103,6 +134,10 @@
   <Scenario>
     <UniqueID>MSS-94abec20-7989-41e6-906a-5a38182e7868</UniqueID>
     <ParentID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-44ed29d4-87c4-474b-a3aa-3f32e88750eb</UniqueID>
+    <ParentID>UC-ce807fd7-1ef4-4970-be9d-7d441edd5969</ParentID>
   </Scenario>
   <Step>
     <UniqueID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</UniqueID>
@@ -174,6 +209,53 @@
     <Sequence>1</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Step>
+  <Step>
+    <UniqueID>ST-78efe429-9a76-4e3f-84d0-ab3a645c1fda</UniqueID>
+    <ParentID>MSS-44ed29d4-87c4-474b-a3aa-3f32e88750eb</ParentID>
+    <Description>The use case starts when the Caller/Callee wants to dial any number and make a call.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The use case starts when the \cf1\ul Caller/Callee\cf0\ulnone  wants to dial any number and make a call.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-f3ce6334-9893-40c4-a9fc-8975dd3d8f01</UniqueID>
+    <ParentID>MSS-44ed29d4-87c4-474b-a3aa-3f32e88750eb</ParentID>
+    <Description>The Caller/Callee enters the number.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  enters the number.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-efc80ac6-4bf5-4ad8-9645-fa558616f2cc</UniqueID>
+    <ParentID>MSS-44ed29d4-87c4-474b-a3aa-3f32e88750eb</ParentID>
+    <Description>The Caller/Callee clicks the dial button.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Caller/Callee\cf0\ulnone  clicks the dial button.\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-53811288-2c72-4c4d-99e5-e8a69aa5e148</UniqueID>
+    <ParentID>MSS-44ed29d4-87c4-474b-a3aa-3f32e88750eb</ParentID>
+    <Description>The app responds by displaying an in-call screen and creating a connection between caller and callee.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 The app responds by displaying an in-call screen and creating a connection between caller and callee.\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
   <Extension>
     <UniqueID>X-67052cbe-d2e5-4f81-aa6f-3e330385595a</UniqueID>
     <ParentID>ST-53e4c9ec-7200-4d73-9759-768a563c48d6</ParentID>
@@ -210,9 +292,21 @@
     <Sequence>0</Sequence>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Extension>
+  <Extension>
+    <UniqueID>X-d283553f-b806-46e9-bc98-416fbc8e0fa4</UniqueID>
+    <ParentID>ST-78efe429-9a76-4e3f-84d0-ab3a645c1fda</ParentID>
+    <Description>1a: If the Caller/Callee does not press the dial button, no call is generated.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 1a: If the \cf1\ul Caller/Callee\cf0\ulnone  does not press the dial button, no call is generated.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>3</NextValue>
+    <NextValue>4</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>

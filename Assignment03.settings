@@ -3,7 +3,7 @@
   <Version>2</Version>
   <PackageId>P-23909a8b-6eb7-46cc-9647-478918d9720e</PackageId>
   <ShowDescendants>true</ShowDescendants>
-  <ProjectOpenedTabName>pgUseCases</ProjectOpenedTabName>
+  <ProjectOpenedTabName>pgStart</ProjectOpenedTabName>
   <Sorting>
     <UseCaseViewSortColumns>
       <string>Name</string>
