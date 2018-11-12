@@ -15,9 +15,19 @@
     <UniqueID>P-23909a8b-6eb7-46cc-9647-478918d9720e</UniqueID>
     <Name>Assignment03</Name>
   </Package>
+  <UseCase>
+    <UniqueID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</UniqueID>
+    <UserID>UC-1</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>UC-01-Select Language</Name>
+    <Sequence>0</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T16:37:08.1836789+05:00</DateAdded>
+    <DateModified>2018-11-12T16:37:23.5588634+05:00</DateModified>
+  </UseCase>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>1</NextValue>
+    <NextValue>2</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
