@@ -42,8 +42,8 @@
   </UseCase>
   <UseCase>
     <UniqueID>UC-df135cea-8b65-4059-aea7-3d753acdfea6</UniqueID>
-    <UserID>UC-1.1</UserID>
-    <ParentID>UC-d989055d-744d-4a65-9786-d6571b3bca6e</ParentID>
+    <UserID>UC-10</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
     <Name>UC-08- View Blocked List</Name>
     <Description>View blocked list allows the Caller/Callee to view blocked numbers by Caller/Callee or Application</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
@@ -51,7 +51,7 @@
 \viewkind4\uc1\pard\f0\fs20 View blocked list allows the \cf1\ul Caller/Callee\cf0\ulnone  to view blocked numbers by \cf1\ul Caller/Callee\cf0\ulnone  or Application\fs20\par
 }
 </RichDescription>
-    <Sequence>0</Sequence>
+    <Sequence>1</Sequence>
     <Priority>1</Priority>
     <PreConditions>Number was previously blocked to the Application to view in Blocked List.</PreConditions>
     <PostConditions>1. The system will not display a number that is blocked. </PostConditions>
@@ -64,7 +64,7 @@
     <TestingSetup />
     <TestingConfigurations />
     <DateAdded>2018-11-12T21:25:40.0363487+05:00</DateAdded>
-    <DateModified>2018-11-12T23:34:44.4481746+05:00</DateModified>
+    <DateModified>2018-11-12T23:44:05.2807956+05:00</DateModified>
   </UseCase>
   <UseCase>
     <UniqueID>UC-ce807fd7-1ef4-4970-be9d-7d441edd5969</UniqueID>
@@ -77,7 +77,7 @@
 \viewkind4\uc1\pard\f0\fs20 It allows the \cf1\ul Caller/Callee\cf0\ulnone  to dial any number and make a call.\par
 }
 </RichDescription>
-    <Sequence>1</Sequence>
+    <Sequence>2</Sequence>
     <Priority>1</Priority>
     <PreConditions>The Caller/Callee must be connected to a cellular network.</PreConditions>
     <PostConditions>The caller is connected to callee and now they can communicate.</PostConditions>
@@ -91,6 +91,66 @@
     <TestingConfigurations />
     <DateAdded>2018-11-12T22:04:47.7974847+05:00</DateAdded>
     <DateModified>2018-11-12T23:31:16.265704+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-aed81726-64f1-46c0-82f5-273d87f9baac</UniqueID>
+    <UserID>UC-4</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>3</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:49.7073329+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:49.7229278+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-c20c5729-23c1-4b8a-945e-4cbbf57a0524</UniqueID>
+    <UserID>UC-5</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>4</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:50.5306405+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:50.5306405+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-26597a31-f613-42ad-b836-6dce100b9a65</UniqueID>
+    <UserID>UC-6</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>5</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:51.3432452+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:51.3432452+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-1425809f-984b-4c62-9d14-89a414359a79</UniqueID>
+    <UserID>UC-7</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>6</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:55.7352681+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:55.7507628+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-c36d0253-fb34-40de-8aa1-211b92fa190e</UniqueID>
+    <UserID>UC-8</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>7</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:57.2899957+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:57.3119302+05:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-439c4a3d-26cd-4a16-ab96-573564201bec</UniqueID>
+    <UserID>UC-9</UserID>
+    <ParentID>P-23909a8b-6eb7-46cc-9647-478918d9720e</ParentID>
+    <Name>New Use Case</Name>
+    <Sequence>8</Sequence>
+    <Priority>1</Priority>
+    <DateAdded>2018-11-12T23:43:58.0514987+05:00</DateAdded>
+    <DateModified>2018-11-12T23:43:58.066974+05:00</DateModified>
   </UseCase>
   <Actor>
     <UniqueID>A-26f734ed-83ea-40b4-90e0-d25f7498bdb2</UniqueID>
@@ -306,7 +366,7 @@
   </Extension>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
-    <NextValue>4</NextValue>
+    <NextValue>11</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
